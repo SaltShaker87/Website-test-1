@@ -91,6 +91,17 @@
     width: 100%;
     aspect-ratio: 16 / 10;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667788 0%, #445566 100%);
+}
+
+.portfolio-screenshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .placeholder-img {
