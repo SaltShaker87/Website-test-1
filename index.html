@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salt Shaker Studio — Medical Education Games</title>
+    <meta name="description" content="Salt Shaker Studio creates interactive educational games for medical trainees. Learn acid-base interpretation, antibiotic prescribing, and more through play.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/retro.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- Skip Link -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ==========================================
+     NAVIGATION BAR
+     ========================================== -->
+<nav class="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+        <a href="#hero" class="nav-logo">Salt Shaker Studio</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            &#9776;
+        </button>
+        <div class="nav-links" id="nav-menu" role="menubar">
+            <a href="#hero" role="menuitem">Home</a>
+            <span class="nav-divider" aria-hidden="true">|</span>
+            <a href="#portfolio" role="menuitem">Games</a>
+            <span class="nav-divider" aria-hidden="true">|</span>
+            <a href="#devblog" role="menuitem">Dev Blog</a>
+            <span class="nav-divider" aria-hidden="true">|</span>
+            <a href="#roadmap" role="menuitem">Roadmap</a>
+            <span class="nav-divider" aria-hidden="true">|</span>
+            <a href="#news" role="menuitem">News</a>
+            <span class="nav-divider" aria-hidden="true">|</span>
+            <a href="#about" role="menuitem">About</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ==========================================
+     MAIN CONTENT
+     ========================================== -->
+<main id="main">
+
+    <!-- ======================================
+         HERO SECTION
+         ====================================== -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-logo-area">
+                <!-- Replace with your logo: <img src="images/logo.png" alt="Salt Shaker Studio Logo"> -->
+                <div class="hero-logo-placeholder retro-sunken">
+                    <span class="hero-logo-text">SALT SHAKER<br>STUDIO</span>
+                </div>
+            </div>
+            <h1 class="hero-title">Salt Shaker Studio</h1>
+            <p class="hero-tagline">Making Medical Education Fun Since 2024</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="retro-button">Explore Our Games</a>
+                <a href="https://discord.gg/" class="retro-button" target="_blank" rel="noopener">Join Discord</a>
+            </div>
+        </div>
+        <!-- Marquee Ticker -->
+        <div class="ticker retro-sunken" aria-hidden="true">
+            <div class="ticker__content">
+                &#9733; Now developing: ABG Bootcamp &nbsp;&nbsp;|&nbsp;&nbsp; ABX coming soon &nbsp;&nbsp;|&nbsp;&nbsp; Join our Discord for updates &nbsp;&nbsp;|&nbsp;&nbsp; GAS prototype in progress &nbsp;&nbsp;&#9733;
+            </div>
+        </div>
+    </section>
+
+    <div class="construction-stripe" aria-hidden="true"></div>
+
+    <!-- ======================================
+         PORTFOLIO SECTION
+         ====================================== -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="retro-section-title">&#128190; Our Games</h2>
+
+            <div class="portfolio-grid">
+
+                <!-- Game 1: ABG -->
+                <div class="retro-window portfolio-card">
+                    <div class="retro-window__titlebar">
+                        <span class="retro-window__title">ABG - Acid Base Game</span>
+                        <div class="retro-window__controls" aria-hidden="true">
+                            <span class="retro-window__control">_</span>
+                            <span class="retro-window__control">&#9633;</span>
+                            <span class="retro-window__control">&times;</span>
+                        </div>
+                    </div>
+                    <div class="retro-window__body">
+                        <div class="portfolio-screenshot retro-sunken">
+                            <div class="placeholder-img">[ ABG Screenshot ]</div>
+                        </div>
+                        <h3 class="portfolio-card__title">ABG: The Acid-Base Learning App</h3>
+                        <p class="portfolio-card__desc">Master blood gas interpretation through interactive cases and instant feedback. Practice with real-world scenarios.</p>
+                        <div class="portfolio-card__status">
+                            <span class="portfolio-card__status-label">Development:</span>
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" style="width: 65%;" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__actions">
+                            <a href="#" class="retro-button">Learn More</a>
+                            <a href="#" class="retro-button">Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game 2: ABX -->
+                <div class="retro-window portfolio-card">
+                    <div class="retro-window__titlebar">
+                        <span class="retro-window__title">ABX - Antibiotic Game</span>
+                        <div class="retro-window__controls" aria-hidden="true">
+                            <span class="retro-window__control">_</span>
+                            <span class="retro-window__control">&#9633;</span>
+                            <span class="retro-window__control">&times;</span>
+                        </div>
+                    </div>
+                    <div class="retro-window__body">
+                        <div class="portfolio-screenshot retro-sunken">
+                            <div class="placeholder-img">[ ABX Screenshot ]</div>
+                        </div>
+                        <h3 class="portfolio-card__title">ABX: The Antibiotic Teaching Game</h3>
+                        <p class="portfolio-card__desc">Learn antibiotic prescribing through gamified clinical scenarios. Match the right drug to the right bug.</p>
+                        <div class="portfolio-card__status">
+                            <span class="portfolio-card__status-label">Development:</span>
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" style="width: 30%;" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__actions">
+                            <a href="#" class="retro-button">Learn More</a>
+                            <a href="#" class="retro-button">Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game 3: GAS -->
+                <div class="retro-window portfolio-card">
+                    <div class="retro-window__titlebar">
+                        <span class="retro-window__title">GAS - Anesthesiology Sim</span>
+                        <div class="retro-window__controls" aria-hidden="true">
+                            <span class="retro-window__control">_</span>
+                            <span class="retro-window__control">&#9633;</span>
+                            <span class="retro-window__control">&times;</span>
+                        </div>
+                    </div>
+                    <div class="retro-window__body">
+                        <div class="portfolio-screenshot retro-sunken">
+                            <div class="placeholder-img">[ GAS Screenshot ]</div>
+                        </div>
+                        <h3 class="portfolio-card__title">GAS: Anesthesiology Simulation</h3>
+                        <p class="portfolio-card__desc">Make critical anesthesia decisions in a simulated operating room. Handle inductions, complications, and emergencies.</p>
+                        <div class="portfolio-card__status">
+                            <span class="portfolio-card__status-label">Development:</span>
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" style="width: 15%;" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__actions">
+                            <a href="#" class="retro-button">Learn More</a>
+                            <a href="#" class="retro-button">Wishlist</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr class="retro-hr container">
+
+    <!-- ======================================
+         DEV BLOG SECTION
+         ====================================== -->
+    <section id="devblog">
+        <div class="container">
+            <h2 class="retro-section-title">&#128221; Dev Blog</h2>
+
+            <div class="retro-window devblog-window">
+                <div class="retro-window__titlebar">
+                    <span class="retro-window__title">devblog.txt - Notepad</span>
+                    <div class="retro-window__controls" aria-hidden="true">
+                        <span class="retro-window__control">_</span>
+                        <span class="retro-window__control">&#9633;</span>
+                        <span class="retro-window__control">&times;</span>
+                    </div>
+                </div>
+                <div class="retro-window__menubar" aria-hidden="true">
+                    <span>File</span>
+                    <span>Edit</span>
+                    <span>Search</span>
+                    <span>Help</span>
+                </div>
+                <div class="retro-window__body retro-window__body--white">
+
+                    <!-- =============================================
+                         DEV BLOG: To add a new post, copy the
+                         template below and paste it ABOVE the
+                         existing posts. Fill in date, title, body.
+                         =============================================
+
+                         TEMPLATE (copy this block):
+                         <article class="blog-post">
+                             <div class="blog-post__date">Month DD, YYYY</div>
+                             <h3 class="blog-post__title">Your Title Here</h3>
+                             <p>Your content here. You can use multiple paragraphs.</p>
+                             <p>Just add more &lt;p&gt; tags for more paragraphs.</p>
+                         </article>
+                         ============================================= -->
+
+                    <article class="blog-post">
+                        <div class="blog-post__date">Feb 13, 2026</div>
+                        <h3 class="blog-post__title">New Website Launch!</h3>
+                        <p>Welcome to the new Salt Shaker Studio website! We've gone full retro with a modern twist. This site will be our home for development updates, game announcements, and behind-the-scenes looks at how we build medical education games.</p>
+                        <p>Stay tuned for regular dev updates as we continue building ABG, ABX, and GAS.</p>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="blog-post__date">Jan 28, 2026</div>
+                        <h3 class="blog-post__title">ABG Alpha Build Progress</h3>
+                        <p>We've completed the core blood gas parser engine and are now building out the case library. The interactive feedback system is showing promising results in early testing with medical residents.</p>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="blog-post__date">Jan 10, 2026</div>
+                        <h3 class="blog-post__title">Welcome to Salt Shaker Studio!</h3>
+                        <p>Dr. Arman Yalcin here. I'm thrilled to officially launch Salt Shaker Studio. As an infectious disease physician, I've seen firsthand how traditional medical education can fall short. Our mission is to create engaging, interactive games that make learning medicine genuinely fun and effective.</p>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="retro-hr container">
+
+    <!-- ======================================
+         ROADMAP SECTION
+         ====================================== -->
+    <section id="roadmap">
+        <div class="container">
+            <h2 class="retro-section-title">&#128197; Roadmap</h2>
+
+            <div class="retro-window">
+                <div class="retro-window__titlebar">
+                    <span class="retro-window__title">Roadmap - Explorer</span>
+                    <div class="retro-window__controls" aria-hidden="true">
+                        <span class="retro-window__control">_</span>
+                        <span class="retro-window__control">&#9633;</span>
+                        <span class="retro-window__control">&times;</span>
+                    </div>
+                </div>
+                <div class="retro-window__menubar" aria-hidden="true">
+                    <span>File</span>
+                    <span>Edit</span>
+                    <span>View</span>
+                    <span>Help</span>
+                </div>
+                <div class="retro-window__body">
+
+                    <!-- =============================================
+                         ROADMAP: To add a new item, add a new <li>
+                         inside the appropriate quarter's <ul>.
+                         To add a new quarter, copy a roadmap-quarter
+                         block and update the title.
+
+                         Status classes:
+                           status-tag--done    = completed (green)
+                           status-tag--wip     = in progress (yellow)
+                           status-tag--planned = planned (gray)
+                         ============================================= -->
+
+                    <div class="roadmap-quarter">
+                        <div class="roadmap-quarter__title">&#128193; Q1 2026</div>
+                        <ul class="roadmap-tree">
+                            <li>
+                                <span>ABG Alpha Release</span>
+                                <span class="status-tag status-tag--wip">IN PROGRESS</span>
+                            </li>
+                            <li>
+                                <span>Steam Page Launch</span>
+                                <span class="status-tag status-tag--planned">PLANNED</span>
+                            </li>
+                            <li>
+                                <span>Discord Community Setup</span>
+                                <span class="status-tag status-tag--done">DONE</span>
+                            </li>
+                            <li>
+                                <span>Website Launch</span>
+                                <span class="status-tag status-tag--done">DONE</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="roadmap-quarter">
+                        <div class="roadmap-quarter__title">&#128193; Q2 2026</div>
+                        <ul class="roadmap-tree">
+                            <li>
+                                <span>ABX Prototype</span>
+                                <span class="status-tag status-tag--planned">PLANNED</span>
+                            </li>
+                            <li>
+                                <span>ABG Beta Testing</span>
+                                <span class="status-tag status-tag--planned">PLANNED</span>
+                            </li>
+                            <li>
+                                <span>Medical Advisor Board</span>
+                                <span class="status-tag status-tag--planned">PLANNED</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="roadmap-quarter">
+                        <div class="roadmap-quarter__title">&#128193; Q3-Q4 2026</div>
+                        <ul class="roadmap-tree">
+                            <li>
+                                <span>GAS Development Kickoff</span>
+                                <span class="status-tag status-tag--planned">PLANNED</span>
+                            </li>
+                            <li>
+                                <span>ABG Full Release</span>
+                                <span class="status-tag status-tag--planned">PLANNED</span>
+                            </li>
+                            <li>
+                                <span>ABX Alpha Release</span>
+                                <span class="status-tag status-tag--planned">PLANNED</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="retro-hr container">
+
+    <!-- ======================================
+         NEWS SECTION
+         ====================================== -->
+    <section id="news">
+        <div class="container">
+            <h2 class="retro-section-title">&#128227; News</h2>
+
+            <div class="retro-raised news-board">
+
+                <!-- =============================================
+                     NEWS: To add a new item, copy the template
+                     below and paste it at the TOP of the list.
+
+                     TEMPLATE:
+                     <div class="news-item retro-sunken">
+                         <div class="news-item__date">Month DD, YYYY</div>
+                         <div class="news-item__text">Your announcement here.</div>
+                     </div>
+                     ============================================= -->
+
+                <div class="news-item retro-sunken">
+                    <div class="news-item__date">Feb 13, 2026 <span class="blink new-badge">NEW!</span></div>
+                    <div class="news-item__text">Salt Shaker Studio website launched! Check out our new retro-styled home.</div>
+                </div>
+
+                <div class="news-item retro-sunken">
+                    <div class="news-item__date">Jan 15, 2026</div>
+                    <div class="news-item__text">ABG prototype showcased at the Medical Education Innovation Conference. Positive feedback from residents and attending physicians!</div>
+                </div>
+
+                <div class="news-item retro-sunken">
+                    <div class="news-item__date">Dec 20, 2025</div>
+                    <div class="news-item__text">Salt Shaker Studio officially founded. Our mission: making medical education fun through interactive games.</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr class="retro-hr container">
+
+    <!-- ======================================
+         ABOUT SECTION
+         ====================================== -->
+    <section id="about">
+        <div class="container">
+            <h2 class="retro-section-title">&#128100; About</h2>
+
+            <div class="retro-window">
+                <div class="retro-window__titlebar">
+                    <span class="retro-window__title">About Salt Shaker Studio</span>
+                    <div class="retro-window__controls" aria-hidden="true">
+                        <span class="retro-window__control">_</span>
+                        <span class="retro-window__control">&#9633;</span>
+                        <span class="retro-window__control">&times;</span>
+                    </div>
+                </div>
+                <div class="retro-window__body">
+                    <div class="about-content">
+                        <div class="about-photo retro-sunken">
+                            <img src="images/arman-photo.png" alt="Dr. Arman Yalcin - Founder of Salt Shaker Studio">
+                        </div>
+                        <div class="about-bio">
+                            <h3>Dr. Arman Yalcin, MD</h3>
+                            <p class="subtitle">Infectious Disease Physician &bull; Founder, Game Designer, and Fellow Nerd</p>
+                            <p>Dr. Yalcin is an infectious disease physician based in Boston who founded Salt Shaker Studio to bridge the gap between traditional medical education and modern interactive learning.</p>
+                            <p>With firsthand experience teaching medical trainees, he recognized that engaging, game-based approaches could transform how physicians learn complex clinical concepts like blood gas interpretation and antibiotic prescribing.</p>
+                        </div>
+                    </div>
+
+                    <hr class="retro-hr">
+
+                    <div class="retro-sunken" style="padding: var(--space-sm);">
+                        <table class="about-info-table">
+                            <tr>
+                                <td>Title:</td>
+                                <td>Founder &amp; Game Designer</td>
+                            </tr>
+                            <tr>
+                                <td>Specialty:</td>
+                                <td>Infectious Disease</td>
+                            </tr>
+                            <tr>
+                                <td>Location:</td>
+                                <td>Boston, MA</td>
+                            </tr>
+                            <tr>
+                                <td>Mission:</td>
+                                <td>Making medical education not suck</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div style="text-align: right; margin-top: var(--space-md);">
+                        <a href="#hero" class="retro-button">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="retro-hr container">
+
+    <!-- ======================================
+         SOCIAL LINKS SECTION
+         ====================================== -->
+    <section id="social">
+        <div class="container" style="text-align: center;">
+            <h2 class="retro-section-title">&#127760; Connect</h2>
+            <div class="social-links">
+                <a href="https://twitter.com/" class="retro-button" target="_blank" rel="noopener">&#120143;&#47;Twitter</a>
+                <a href="https://discord.gg/" class="retro-button" target="https://discord.gg/3XPGmgy6" rel="noopener">Discord</a>
+                <a href="https://store.steampowered.com/" class="retro-button" target="_blank" rel="noopener">Steam</a>
+                <a href="https://linkedin.com/" class="retro-button" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ==========================================
+     FOOTER
+     ========================================== -->
+<footer class="site-footer">
+    <div class="construction-stripe" aria-hidden="true"></div>
+    <div class="container">
+        <div class="footer-logo">
+            <!-- Replace with grayscale logo: <img src="images/logo-gray.png" alt="" width="60"> -->
+            <div style="font-family: var(--font-pixel); font-size: 24px; margin: var(--space-md) 0;">Salt Shaker Studio</div>
+        </div>
+
+        <p>&copy; 2024&ndash;2026 Salt Shaker Studio. All rights reserved.</p>
+
+        <div class="footer-badges">
+            <span class="retro-badge">&#127760; Best viewed in Netscape Navigator 4.0</span>
+            <span class="retro-badge">&#128187; 800&times;600</span>
+            <span class="retro-badge">&#9989; Valid HTML</span>
+            <span class="retro-badge">&#9997; Made with Notepad</span>
+        </div>
+
+        <p>You are visitor #<span class="hit-counter" id="hit-counter">00000001</span></p>
+
+        <p style="margin-top: var(--space-md);">
+            <a href="mailto:contact@saltshakerstudio.com">&#9993; contact@saltshakerstudio.com</a>
+        </p>
+
+        <p style="margin-top: var(--space-sm); font-size: 11px; color: var(--win-dark);">
+            Made with &#10084; and HTML
+        </p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+</body>
+</html>

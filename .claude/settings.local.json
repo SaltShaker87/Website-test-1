@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:saltshakerstudio.carrd.co)",
+      "Bash(start \"\" \"C:\\\\Users\\\\yalci\\\\OneDrive\\\\Documents\\\\SSS logos and files and stuff\\\\Website test 1\\\\index.html\")"
+    ]
+  }
+}
