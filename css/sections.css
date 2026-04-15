@@ -81,10 +81,16 @@
 }
 
 /* --- Portfolio Section --- */
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+}
+
 .portfolio-card .retro-window__body {
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
+    flex: 1;
 }
 
 .portfolio-screenshot {
@@ -144,7 +150,7 @@
 .portfolio-card__actions {
     display: flex;
     gap: var(--space-sm);
-    margin-top: var(--space-sm);
+    margin-top: auto;
 }
 
 .portfolio-card__actions .retro-button {

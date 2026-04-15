@@ -209,6 +209,36 @@
                     </div>
                 </div>
 
+
+                <!-- Game 5: CRM -->
+                <div class="retro-window portfolio-card">
+                    <div class="retro-window__titlebar">
+                        <span class="retro-window__title">CRM - Clinical Reasoning Model</span>
+                        <div class="retro-window__controls" aria-hidden="true">
+                            <span class="retro-window__control">_</span>
+                            <span class="retro-window__control">&#9633;</span>
+                            <span class="retro-window__control">&times;</span>
+                        </div>
+                    </div>
+                    <div class="retro-window__body">
+                        <div class="portfolio-screenshot retro-sunken">
+                            <img src="images/crm-logo.png" alt="CRM - Clinical Reasoning Model logo">
+                        </div>
+                        <h3 class="portfolio-card__title">CRM: Clinical Reasoning Model</h3>
+                        <p class="portfolio-card__desc">A fine-tuned small language model trained on 511 physician-annotated clinical cases. Walks through differential diagnosis step by step — symptoms to workup to treatment — with fewer hallucinations than the base model.</p>
+                        <div class="portfolio-card__status">
+                            <span class="portfolio-card__status-label">Development:</span>
+                            <div class="progress-bar">
+                                <div class="progress-bar__fill" style="width: 20%;" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-card__actions">
+                            <a href="https://huggingface.co/ploppy2/Clinical-Reasoning-Test1" class="retro-button" target="_blank" rel="noopener">Learn More</a>
+                            <a href="#" class="retro-button">Try It! (Coming Soon)</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -253,6 +283,20 @@
                              <p>Just add more &lt;p&gt; tags for more paragraphs.</p>
                          </article>
                          ============================================= -->
+
+                    <article class="blog-post">
+                        <div class="blog-post__date">Apr 14, 2026</div>
+                        <h3 class="blog-post__title">I Fine-Tuned a Language Model on Medical Cases. Here's What Happened.</h3>
+                        <p>Quick background: I've been building teaching tools for medical trainees for a while. At some point I got curious — what if instead of hard-coding decision trees, I just trained a small language model to reason through clinical cases the way a physician would? Reader, I tried it.</p>
+                        <p><strong>1. What I Actually Did</strong><br>
+                        Took Llama 3.2 3B Instruct — a small, open-source model — and fine-tuned it on 511 physician-annotated cases from the DiReCT dataset using LoRA. Ran it on a Google Colab T4 GPU for 3 training epochs. The loss dropped from 22 to 3.7, which sounds like a lot because it is. I did not invent any of the underlying technology here. I just pointed existing tools at a medical dataset and let it cook.</p>
+                        <p><strong>2. Does It Actually Work?</strong><br>
+                        Yes, actually. I gave both the base model and my fine-tuned version the same clinical vignette — a classic hypothyroidism presentation. The base model confidently stated that cold intolerance is caused by <em>too much</em> thyroid hormone. Which is the opposite of true. It also said the patient had weight <em>loss</em>. Hypothyroidism causes weight <em>gain</em>. These are not subtle errors. These are the kind of errors that would make an attending physically wince.<br>
+                        The fine-tuned model correctly identified hypothyroidism, flagged Hashimoto's as a likely cause, and walked through a logical flow: symptoms → testing → treatment. Basic? Sure. But correct. That's not nothing.</p>
+                        <p><strong>3. This Is a Proof of Concept, Not a Product</strong><br>
+                        To be very clear: this is early and experimental. Training data is limited to 511 cases, the base model is 3B parameters, and there's a long road ahead. What I wanted to know was whether this direction was even worth pursuing. The answer seems to be yes. Next steps include expanding the dataset, upgrading the base model, and cleaning up the hedging language the outputs love to pepper in. Nobody needs a model that qualifies every sentence with "however, it is important to note that I am an AI."</p>
+                        <p>Model is live on HuggingFace if you want to poke at it: <a href="https://huggingface.co/ploppy2/Clinical-Reasoning-Test1" target="_blank" rel="noopener">huggingface.co/ploppy2/Clinical-Reasoning-Test1</a></p>
+                    </article>
 
                     <article class="blog-post">
                         <div class="blog-post__date">Mar 31, 2026</div>
